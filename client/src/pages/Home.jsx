@@ -7,12 +7,12 @@ const features = [
         desc: 'Submit misuse reports via our detailed online form with location pinning.',
         color: 'from-red-500/20 to-transparent border-red-600/20',
     },
-    {
-        icon: '📱',
-        title: 'USSD Integration',
-        desc: 'Report via any phone using Africa\'s Talking USSD — no internet needed.',
-        color: 'from-orange-500/20 to-transparent border-orange-600/20',
-    },
+    // {
+    //     icon: '📱',
+    //     title: 'USSD Integration',
+    //     desc: 'Report via any phone using Africa\'s Talking USSD — no internet needed.',
+    //     color: 'from-orange-500/20 to-transparent border-orange-600/20',
+    // },
     {
         icon: '📊',
         title: 'Live Dashboard',
@@ -150,7 +150,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* USSD section */}
+            {/* USSD section
             <section className="border-y border-border/50 bg-surface/40">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 gap-12 items-center">
                     <div>
@@ -185,7 +185,7 @@ export default function Home() {
                         </ol>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* CTA */}
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">

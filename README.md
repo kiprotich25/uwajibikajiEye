@@ -11,7 +11,6 @@
 | Database | MongoDB + Mongoose |
 | Charts | Recharts |
 | Maps | Leaflet + react-leaflet + OpenStreetMap |
-| USSD | Africa's Talking (mocked locally) |
 | Package Manager | pnpm |
 
 ## Quick Start
@@ -38,7 +37,7 @@ pnpm install
 Copy `server/.env` and fill in your values:
 ```
 MONGO_URI=mongodb://localhost:27017/uwajibikaji-eye
-AFRICASTALKING_API_KEY=your_key
+
 PORT=5000
 ```
 
@@ -79,27 +78,11 @@ pnpm dev
 | GET | `/api/dashboard` | Dashboard aggregated stats |
 | GET | `/api/candidates` | All candidates with risk levels |
 | GET | `/api/candidates/:name` | Candidate profile + timeline |
-| POST | `/api/ussd` | Africa's Talking USSD handler |
 
-## USSD Flow (Africa's Talking)
 
-```
-Dial *XXX#
-→ 1. Report Misuse
-   → Enter candidate name
-   → Choose type (1=vehicle, 2=building, 3=funds, 4=staff)
-   → Enter county
-   ✅ Report saved
-→ 2. View Summary
-   → Shows total reports + high-risk count
-→ 3. Exit
-```
 
-Test with curl:
-```bash
-curl -X POST http://localhost:5000/api/ussd \
-  -d "sessionId=test1&serviceCode=*123#&phoneNumber=+254700000000&text="
-```
+
+
 
 ## Risk Scoring
 
@@ -156,7 +139,7 @@ uwajibikaji-eye/
 ### Backend → Render
 - Build command: `pnpm install`
 - Start command: `node index.js`
-- Set `MONGO_URI` and `AFRICASTALKING_API_KEY` environment variables
+- Set `MONGO_URI`  environment variable
 
 ### Frontend → Vercel
 - Framework: Vite

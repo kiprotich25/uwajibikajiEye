@@ -191,8 +191,7 @@ export default function Home() {
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
                 <h2 className="text-4xl font-bold text-white mb-4">Ready to Make Leaders Accountable?</h2>
                 <p className="text-slate-400 mb-8 max-w-xl mx-auto">
-                    Join thousands of Kenyans holding elected officials accountable through transparent,
-                    evidence-based reporting.
+                    Join thousands of Kenyans in making elections transparent and fair. Every report counts in the fight against corruption and misuse of public resources.
                 </p>
                 <Link to="/report" className="btn-primary text-lg px-8 py-4">
                     Submit a Report
